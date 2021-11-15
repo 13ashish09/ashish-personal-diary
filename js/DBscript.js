@@ -112,7 +112,7 @@ function createAndAddNote(e) {
 	const icon_save = document.createElement('i');
 	icon_save.classList.add('fas');
 	icon_save.classList.add('fa-save');
-	icon_save.classList.setAttribute('onclick', 'saveText();');	
+	icon_save.classList.setAttribute('onclick', 'saveText()');	
 
 
 	// Add listener
