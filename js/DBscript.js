@@ -99,6 +99,11 @@ function createAndAddNote(e) {
 	const icon = document.createElement('i');
 	icon.classList.add('fas');
 	icon.classList.add('fa-trash');
+	// ICON_save
+	const icon_save = document.createElement('i');
+	icon_save.classList.add('fas');
+	icon_save.classList.add('fa-save');
+	
 
 
 	// Add listener
@@ -113,6 +118,7 @@ function createAndAddNote(e) {
 	});
 
 	noteElement.appendChild(textArea);
+	noteElement.appendChild(icon_save);
 	noteElement.appendChild(icon);
 	noteContainer.appendChild(noteElement);
 	
