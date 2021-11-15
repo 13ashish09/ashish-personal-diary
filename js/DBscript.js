@@ -55,11 +55,15 @@ if (notes.length > 0) {
 		const icon_save = document.createElement('i');
 		icon_save.classList.add('fas');
 		icon_save.classList.add('fa-save');
+		icon_save.classList.setAttribute('onclick', 'saveText();');
+		
 		
 		noteElement.appendChild(textArea);
 		noteElement.appendChild(icon_save);
 		noteElement.appendChild(icon);
 		noteContainer.appendChild(noteElement);
+		
+
 	});
 }
 
@@ -104,11 +108,11 @@ function createAndAddNote(e) {
 	const icon = document.createElement('i');
 	icon.classList.add('fas');
 	icon.classList.add('fa-trash');
-	// ICON_save
+	// ICON Save
 	const icon_save = document.createElement('i');
 	icon_save.classList.add('fas');
 	icon_save.classList.add('fa-save');
-	
+	icon_save.classList.setAttribute('onclick', 'saveText();');	
 
 
 	// Add listener
@@ -126,6 +130,7 @@ function createAndAddNote(e) {
 	noteElement.appendChild(icon_save);
 	noteElement.appendChild(icon);
 	noteContainer.appendChild(noteElement);
+
 	
 }
 
@@ -157,9 +162,9 @@ function saveNote(e) {
 
 // // SAVE to local storage
 // function saveToLocalStg(note) {
-//	 let notes = JSON.parse(localStorage.getItem('notes')) || [];
-//	 notes.push(note);
-//	 localStorage.setItem('notes', JSON.stringify(notes));
+// 	 let notes = JSON.parse(localStorage.getItem('notes')) || [];
+// 	 notes.push(note);
+// 	 localStorage.setItem('notes', JSON.stringify(notes));
 // }
 
 // let textAreas = document.getElementsByClassName('note-text') || [];
@@ -186,6 +191,7 @@ noteColors.forEach(color => {
 });
 
 document.querySelector('.notes-container').addEventListener('click', deleteNote);
+// document.querySelector('.fa-save').addEventListener('click', saveNote);
 
 addNoteBtn.addEventListener('click', showColors);
 
