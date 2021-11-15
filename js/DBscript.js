@@ -51,6 +51,10 @@ if (notes.length > 0) {
 		const icon = document.createElement('i');
 		icon.classList.add('fas');
 		icon.classList.add('fa-trash');
+		// ICON Save
+		const icon_save = document.createElement('i');
+		icon_save.classList.add('fas');
+		icon_save.classList.add('fa-save');
 		
 		noteElement.appendChild(textArea);
 		noteElement.appendChild(icon);
