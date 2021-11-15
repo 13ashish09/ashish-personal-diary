@@ -57,6 +57,7 @@ if (notes.length > 0) {
 		icon_save.classList.add('fa-save');
 		
 		noteElement.appendChild(textArea);
+		noteElement.appendChild(icon_save);
 		noteElement.appendChild(icon);
 		noteContainer.appendChild(noteElement);
 	});
