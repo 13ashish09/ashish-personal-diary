@@ -141,6 +141,15 @@ function deleteNote(e) {
 	}
 }
 
+// Save Note
+function saveNote(e) {
+	if(e.target.classList.contains('fa-save')) {
+		db.collection('noteText').add({
+			note: textArea.value
+		});
+	}
+}
+
 // // SAVE to local storage
 // function saveToLocalStg(note) {
 //	 let notes = JSON.parse(localStorage.getItem('notes')) || [];
