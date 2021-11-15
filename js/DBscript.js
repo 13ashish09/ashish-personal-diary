@@ -155,7 +155,7 @@ function deleteNote(e) {
 function saveNote(e) {
 	if(e.target.classList.contains('fa-save')) {
 		db.collection('noteText').add({
-			note: textArea.value
+			note: note.text.value
 		});
 	}
 }
