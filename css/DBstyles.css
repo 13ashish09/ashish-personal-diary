@@ -247,7 +247,7 @@ body::-webkit-scrollbar-track {
   display: inline-flex;
   height: 50px;
   padding: 0;
-  background: #fff;
+  background: #b87dc0;
   border: none;
   outline: none;
   border-radius: 5px;
@@ -259,10 +259,10 @@ body::-webkit-scrollbar-track {
 }
 
 .button:hover {
-  background: #fff;
+  background: #b87dc0;
 }
 
 .button:active {
-  background: #fff;
+  background: #b87dc0;
 
 }
